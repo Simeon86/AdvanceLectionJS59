@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <form id="userForm">
+        <div>
+            <label>Enter user name:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label>Enter user role:</label>
+            <input type="text" name="role">
+        </div>
+        <div>
+            <input type="checkbox" name="isActive">
+            <label>Is user currently active</label>
+        </div>
+        <div>
+            <input type="checkbox" name="isAvailable">
+            <label>Is user currently available</label>
+        </div>
+        <!-- <div>
+            <select>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+            </select>
+        </div> -->
+        <div class="errors">
+
+        </div>
+        <input type="submit" value="submit"> 
+    </form>
+
+    <table id="users">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Is Active</th>
+                <th>Is Available</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
